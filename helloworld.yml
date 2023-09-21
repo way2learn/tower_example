@@ -5,6 +5,6 @@
   - name: Hello World!
     shell: echo "Hi! Tower is working."
   - name: uninstall vim package
-    yum: name=vim state=absent
+    yum: name=vim state=absent become=true
   - name: uninstall yum utils package
-    yum: name=yum-utils state=absent
+    yum: name=yum-utils state=absent become=true

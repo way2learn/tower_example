@@ -1,10 +1,10 @@
 ---
-- name: Uninstall the vim package
+- name: Uninstall the yum utils and vim package if available
   hosts: "{{target}}"
- 
   tasks:
- 
   - name: Hello World!
     shell: echo "Hi! Tower is working."
-  - name: install vim package
+  - name: uninstall vim package
     yum: name=vim state=absent
+  - name: uninstall yum utils package
+    yum: name=yum-utils state=absent

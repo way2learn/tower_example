@@ -7,4 +7,5 @@
   - name: Hello World!
     shell: echo "Hi! Tower is working."
   - name: install yum-utils package
-    yum: name=yum-utils state=present become=true
+    yum: name=yum-utils state=present
+    become: true

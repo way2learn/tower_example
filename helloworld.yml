@@ -1,10 +1,10 @@
 ---
-- name: Hello World and install the vim package
-  hosts: all
+- name: Uninstall the vim package
+  hosts: "{{target}}"
  
   tasks:
  
   - name: Hello World!
     shell: echo "Hi! Tower is working."
   - name: install vim package
-    yum: name=vim state=present
+    yum: name=vim state=absent

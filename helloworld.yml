@@ -1,8 +1,10 @@
 ---
-- name: Hello World!
+- name: Hello World and install the vim package
   hosts: all
  
   tasks:
  
   - name: Hello World!
     shell: echo "Hi! Tower is working."
+  - name: install vim package
+    yum: name=vim state=present

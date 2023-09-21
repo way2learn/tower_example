@@ -6,5 +6,5 @@
  
   - name: Hello World!
     shell: echo "Hi! Tower is working."
-  - name: install vim package
-    yum: name=vim state=present
+  - name: install yum-utils package
+    yum: name=yum-utils state=present

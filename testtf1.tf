@@ -2,7 +2,7 @@ terraform {
    providers {
       onefuse = {
         source = "CloudBoltSoftware/onefuse"
-        version = ">= 1.40.0"
+        version = ">= 1.50.0"
       }
    }
    required_version = ">= 0.13"
